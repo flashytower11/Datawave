@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datawave | Secure, Eco-Friendly Data Storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ocean: {
+                            900: '#0f172a', // Deep sea navy
+                            800: '#1e293b',
+                            600: '#0284c7', // Ocean blue
+                            500: '#0ea5e9',
+                            400: '#38bdf8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="absolute top-0 left-0 right-0 p-6 z-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-white flex items-center gap-2">
+                <svg class="w-8 h-8 text-ocean-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Datawave
+            </div>
+            <a href="#contact" class="text-sm font-semibold text-white/80 hover:text-white transition">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero / Subscription Section -->
+    <header class="relative bg-ocean-900 overflow-hidden flex flex-col justify-center min-h-[85vh] px-6 py-24">
+        <!-- Abstract wave background shapes -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-ocean-500 blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-blue-800 blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto text-center z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-ocean-800/50 border border-ocean-600/30 text-ocean-400 text-sm font-semibold mb-6">
+                Coming Soon
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
+                The future of data is <span class="text-transparent bg-clip-text bg-gradient-to-r from-ocean-400 to-teal-300">beneath the surface.</span>
+            </h1>
+            <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                We are building the next generation of secure, scalable, and zero-emission underwater data centers. 
+            </p>
+
+            <!-- Email Subscription Form -->
+            <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                <input type="email" placeholder="Enter your email" required
+                    class="flex-1 px-5 py-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-ocean-400 focus:ring-1 focus:ring-ocean-400 transition">
+                <button type="submit" 
+                    class="px-8 py-4 rounded-lg bg-ocean-600 hover:bg-ocean-500 text-white font-semibold transition shadow-lg shadow-ocean-600/30 whitespace-nowrap">
+                    Notify Me
+                </button>
+            </form>
+            <p class="text-sm text-slate-500 mt-4">Be the first to know when we launch. No spam, ever.</p>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section id="story" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-8">Our Story</h2>
+            <div class="prose prose-lg mx-auto text-slate-600 leading-relaxed text-left md:text-center space-y-6">
+                <p>
+                    At <strong class="text-ocean-900">Datawave</strong>, we strive to make data storage secure, scalable, and energy-efficient. By harnessing the power of the sea, we enable businesses to store, access and protect their data—while protecting the planet. 
+                </p>
+                <p>
+                    We partner closely with companies to deliver tailored, eco-friendly data storage solutions. From the first consultation to full deployment, we work hand-in-hand to understand each client’s needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">How It Works</h2>
+                <p class="mt-4 text-lg text-slate-600">Innovation that scales with your business and the environment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-xl bg-ocean-100 text-ocean-600 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">1. Submerge</h3>
+                    <p class="text-slate-600">We deploy autonomous server pods to the ocean floor, utilizing the naturally cold environment for 100% passive cooling.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-xl bg-ocean-100 text-ocean-600 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">2. Secure</h3>
+                    <p class="text-slate-600">Your data is guarded by military-grade encryption and ultimate physical isolation, protecting against traditional physical breaches.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-14 h-14 rounded-xl bg-ocean-100 text-ocean-600 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">3. Sustain</h3>
+                    <p class="text-slate-600">Powered entirely by offshore renewable energy sources, resulting in a carbon-negative footprint for your enterprise data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="py-24 px-6 bg-ocean-900 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to ride the wave?</h2>
+            <p class="text-xl text-slate-300 mb-10">
+                Whether you're looking to reduce your data footprint or need a tailored storage solution, our team is ready to talk.
+            </p>
+            <a href="mailto:hello@datawave.com" class="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-white text-ocean-900 font-bold hover:bg-slate-100 transition shadow-xl">
+                Contact Us Today
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ocean-900 border-t border-white/10 py-8 text-center text-slate-400">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2 text-white font-bold">
+                <svg class="w-5 h-5 text-ocean-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Datawave
+            </div>
+            <p class="text-sm">© 2026 Datawave. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
